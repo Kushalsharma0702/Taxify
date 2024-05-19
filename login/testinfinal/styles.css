@@ -1,0 +1,21 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #f1f1f1;
+	padding: 10px 20px;
+}
+
+button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+}
+
+.search-icon {
+	font-size: 20px;
+	color: #666;
+	cursor: pointer;
+}
