@@ -179,37 +179,24 @@ src="https://widget.writesonic.com/CDN/index.html?service-base-url=https%3A%2F%2
 
 
 
-  <script>
-    document.getElementById("chatbot-link").addEventListener("click", function (event) {
-      event.preventDefault();
-
-      const script = document.createElement("script");
-      script.src = "https://www.botsnchat.com/scripts/botsonic.js"; // Adjust the source URL if necessary
-      script.onload = function () {
-        const botsonic = window.Botsonic || {};
-        botsonic.init = botsonic.init || function (config) {
-          botsonic.config = config;
-          botsonic.loaded = true;
-          console.log('Botsonic initialized:', config);
-        };
-        botsonic.init({
-          websiteID: "64f1a53b2433f404445ae28a",
-          height: "600px",
-          width: "400px"
-        });
-        console.log('Botsonic script loaded successfully');
-        const iframe = document.createElement("iframe");
-        iframe.src = "https://www.botsonic.com/chatbot/" + botsonic.config.websiteID;
-        iframe.style.height = botsonic.config.height;
-        iframe.style.width = botsonic.config.width;
-        document.body.appendChild(iframe);
-        console.log('Botsonic iframe appended to the body');
+ <script>
+  (function (w, d, s, o, f, js, fjs) {
+    w["botsonic_widget"] = o;
+    w[o] =
+      w[o] ||
+      function () {
+        (w[o].q = w[o].q || []).push(arguments);
       };
-      script.onerror = function () {
-        console.error('Failed to load Botsonic script');
-      };
-      document.head.appendChild(script);
-    });
-  </script>
+    (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+    js.id = o;
+    js.src = f;
+    js.async = 1;
+    fjs.parentNode.insertBefore(js, fjs);
+  })(window, document, "script", "Botsonic", "https://widget.writesonic.com/CDN/botsonic.min.js");
+  Botsonic("init", {
+    serviceBaseUrl: "https://api-azure.botsonic.ai",
+    token: "5ee99cf8-090a-4cd4-ba1e-46f4f9b9b3f0",
+  });
+</script>
 </body>
 </html>
