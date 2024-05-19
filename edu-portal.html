@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Hello,its Taxify</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Arsha
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Updated: May 13 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Taxify</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#Business">Business</a></li>
+          <li><a href="#team">Team</a></li>
+          <!--<li><a href="#pricing">Pricing</a></li>-->
+          <li class="dropdown"><a href="#"><span>Features</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="chat-bot.html">A.I. chatbot</a></li>
+              <!--<li class="dropdown"><a href="#"><span></span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>-->
+              <li><a href="#">Balanced sheet</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Edu-portal</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#about">Get Started</a>
+
+    </div>
+  </header>
+    <nav>
+        <button onclick="showSection('articles')">Articles</button>
+        <button onclick="showSection('tutorials')">Tutorials</button>
+        <!-- Add more navigation buttons as needed -->
+    </nav>
+    <section id="articles" class="content-section">
+        <h2>Articles</h2>
+        <div class="article-container">
+            <div class="gift-card">
+                <h3><a href="https://www.indiafilings.com/learn/e-verify-income-tax-return-evc/" target="_blank">Article No. 1</a></h3>
+                <p>This is the content of the article 1.</p>
+            </div>
+            <div class="gift-card">
+                <h3><a href="https://cleartax.in/s/how-to-efile-itr" target="_blank">Article No. 2</a></h3>
+                <p>This is another article 2.</p>
+            </div>
+            <div class="gift-card">
+                <h3><a href="https://www.business-standard.com/finance/personal-finance/10-things-taxpayers-should-keep-in-mind-before-filing-income-tax-return-123062100478_1.html" target="_blank">Article No. 3</a></h3>
+                <p>This is yet another article 3.</p>
+            </div>
+            <div class="gift-card">
+                <h3><a href="https://cleartax.in/s/old-tax-regime-vs-new-tax-regime" target="_blank">Article No. 4</a></h3>
+                <p>This is the fourth article 4.</p>
+            </div>
+        </div>
+    </section>
+    <section id="tutorials" class="content-section" style="display: none;">
+        <h2>Tutorials</h2>
+        <div class="tutorial-container">
+            <div class="gift-card">
+                <h3>Tutorial No. 1</h3>
+                <p>This is the tax planning tutorial.</p>
+                <a href="https://youtu.be/EWIFyODtNTM?si=kGbpoDAiPBfLO34p" target="_blank">Watch Tutorial Video</a>
+            </div>
+            <div class="gift-card">
+                <h3>Tutorial No. 2</h3>
+                <p>Tax Planning Guide for a Salaried Professional.</p>
+                <a href="https://youtu.be/DpFXj2evzPY?si=Qqqep0EUxMCg_J-u" target="_blank">Watch Tutorial Video</a>
+            </div>
+            <div class="gift-card">
+                <h3>Tutorial No. 3</h3>
+                <p>How to File Income Tax Return 2024.</p>
+                <a href="https://youtu.be/MoQhspKxv7E?si=FfYxwgBMw7fUGvfI" target="_blank">Watch Tutorial Video</a>
+            </div>
+            <div class="gift-card">
+                <h3>Tutorial No. 4</h3>
+                <p>5 Important Things to Do Before ITR Filing AY 23-24.</p>
+                <a href="https://youtu.be/ssQpG5IPGqM?si=wsqkMsav6IBY_WY1" target="_blank">Watch Tutorial Video</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Education Portal. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
