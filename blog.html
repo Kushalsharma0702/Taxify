@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Blog</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <div class="container">
+        <div class="previous-tweets">
+            <div class="tweet-container">
+                <div class="user-info">
+                    <img src="user1.jpg" alt="Profile Picture" class="profile-picture">
+                    <div class="user-details">
+                        <h3 class="username">Vineet</h3>
+                        <p class="user-id">@vineetcres</p>
+                    </div>
+                </div>
+                <p class="tweet-text">How's it going?</p>
+            </div>
+
+            <div class="tweet-container">
+                <div class="user-info">
+                    <img src="user2.jpg" alt="Profile Picture" class="profile-picture">
+                    <div class="user-details">
+                        <h3 class="username">Kushal</h3>
+                        <p class="user-id">@kushalsharma</p>
+                    </div>
+                </div>
+                <p class="tweet-text">File taxes using our chatbot</p>
+            </div>
+
+            <div class="tweet-container">
+                <div class="user-info">
+                    <img src="user3.jpg" alt="Profile Picture" class="profile-picture">
+                    <div class="user-details">
+                        <h3 class="username">Ananya</h3>
+                        <p class="user-id">@ananyaraj</p>
+                    </div>
+                </div>
+                <p class="tweet-text">NewUpdateSoon</p>
+            </div>
+
+            <div class="tweet-container">
+                <div class="user-info">
+                    <img src="user4.jpg" alt="Profile Picture" class="profile-picture">
+                    <div class="user-details">
+                        <h3 class="username">Tanmay</h3>
+                        <p class="user-id">@tanmay</p>
+                    </div>
+                </div>
+                <p class="tweet-text">File taxes using our chatbot.. Join Us Now</p>
+            </div>
+        </div>
+
+        <div class="new-tweet">
+            <div class="tweet-container">
+                <div class="user-info">
+                    <img src="profile.jpg" alt="Profile Picture" class="profile-picture">
+                    <div class="user-details">
+                        <h3 class="username">Kaustubh Pandey</h3>
+                        <p class="user-id">@kaustubhpandey</p>
+                    </div>
+                </div>
+                <textarea class="tweet-input" placeholder="Write your Blog here... or Click on the [i] button to add attachments"></textarea>
+                <div class="options">
+                    <label for="file-input" class="file-upload">
+                        <i class="fa fa-picture-o"></i>
+                        <input type="file" id="file-input" style="display: none;">
+                    </label>
+                    <button class="tweet-button" onclick="postTweet()">Post</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+    <script>
+          function postTweet() {
+            const tweetInput = document.querySelector('.tweet-input');
+            const tweetText = tweetInput.value.trim();
+
+            if (tweetText !== '') {
+                const tweetContainer = document.createElement('div');
+                tweetContainer.classList.add('tweet-container');
+
+                const userInfo = document.createElement('div');
+                userInfo.classList.add('user-info');
+
+                const profilePicture = document.createElement('img');
+                profilePicture.src = 'profile.jpg';
+                profilePicture.alt = 'Profile Picture';
+                profilePicture.classList.add('profile-picture');
+
+                const userDetails = document.createElement('div');
+                userDetails.classList.add('user-details');
+
+                const username = document.createElement('h3');
+                username.classList.add('username');
+                username.textContent = 'John Doe';
+
+                const userId = document.createElement('p');
+                userId.classList.add('user-id');
+                userId.textContent = '@johndoe';
+
+                userDetails.appendChild(username);
+                userDetails.appendChild(userId);
+                userInfo.appendChild(profilePicture);
+                userInfo.appendChild(userDetails);
+
+                const tweetText = document.createElement('p');
+                tweetText.classList.add('tweet-text');
+                tweetText.textContent = tweetInput.value;
+
+                tweetContainer.appendChild(userInfo);
+                tweetContainer.appendChild(tweetText);
+
+                const tweetsContainer = document.body;
+                tweetsContainer.insertBefore(tweetContainer, tweetsContainer.firstChild);
+
+                tweetInput.value = '';
+            }
+        }
+    </script>
+</body>
+</html>
