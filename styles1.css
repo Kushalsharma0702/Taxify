@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #37517E;
     color: white;
     padding: 15px 0;
     text-align: center;
@@ -69,7 +69,7 @@ nav button:hover {
 .gift-card h3 {
     margin: 0;
     font-size: 24px;
-    color: #4CAF50;
+    color: #37517E;
 }
 
 .gift-card p {
@@ -80,7 +80,7 @@ nav button:hover {
 .gift-card a {
     display: block;
     margin-top: 10px;
-    color: #4CAF50;
+    color: #37517E;
     text-decoration: none;
 }
 
